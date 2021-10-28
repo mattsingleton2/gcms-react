@@ -14,7 +14,7 @@ function Home(props) {
         moments. We're committed to helping you run the community that you want
         to have.
       </p>
-      <div>
+      <div className="mb-5">
         <a className="btn btn-lg btn-primary">Learn more</a>
       </div>
     </div>

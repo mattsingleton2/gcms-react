@@ -4,7 +4,7 @@ import React from "react";
 function Footer(props) {
   return (
     <>
-      <div className="mt-5"></div>
+      <div className="mt-5 mb-5"></div>
       <div className="container mastfoot mt-auto">
         <div className="row row-content justify-content-center">
           <div className="col-6 col-sm-5 text-center">
