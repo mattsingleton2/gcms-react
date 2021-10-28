@@ -1,5 +1,6 @@
 import Home from "./components/HomeComponent";
 import Header from "./components/HeaderComponent";
+import Footer from "./components/FooterComponent";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="outer-theme h-100 w-100">
         <Home />
       </div>
+      <Footer />
     </>
   );
 }
