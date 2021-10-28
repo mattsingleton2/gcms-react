@@ -4,6 +4,7 @@ import React from "react";
 function Footer(props) {
   return (
     <>
+      <div className="mt-5"></div>
       <div className="container mastfoot mt-auto">
         <div className="row row-content justify-content-center">
           <div className="col-6 col-sm-5 text-center">
@@ -36,7 +37,7 @@ function Footer(props) {
               class="btn btn-social-icon btn-discord"
               href="http://discord.com/"
             >
-              <FontAwesomeIcon icon="fa-brands fa-discord" color="#FFF" />
+              <FontAwesomeIcon icon="fa fa-discord" color="#FFF" />
             </a>
           </div>
         </div>
