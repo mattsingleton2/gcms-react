@@ -1,8 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "bootstrap-social";
+import "@fortawesome/fontawesome-svg-core";
+import "font-awesome/css/font-awesome.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
 
 ReactDOM.render(
