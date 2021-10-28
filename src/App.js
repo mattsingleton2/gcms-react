@@ -1,18 +1,18 @@
-import Home from "./components/HomeComponent";
-import Header from "./components/HeaderComponent";
-import Footer from "./components/FooterComponent";
+import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./components/MainComponent";
 import "./App.css";
 
-function App() {
-  return (
-    <>
-      <Header />
-      <div className="outer-theme h-100 w-100">
-        <Home />
-      </div>
-      <Footer />
-    </>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Main />
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
