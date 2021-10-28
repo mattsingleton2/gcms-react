@@ -37,7 +37,7 @@ function Footer(props) {
               class="btn btn-social-icon btn-discord"
               href="http://discord.com/"
             >
-              <FontAwesomeIcon icon="fa-brands fa-discord" color="#FFF" />
+              <FontAwesomeIcon icon="fa fa-discord" color="#FFF" />
             </a>
           </div>
         </div>
