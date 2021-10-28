@@ -1,102 +1,113 @@
 import React, { Small } from "react";
 import { Label, Input } from "reactstrap";
+import { Form, Button, FormGroup, FormText } from "react-bootstrap";
+import { Row, Col, Container } from "reactstrap";
 import "../App.css";
 
-function ContactUs(props) {
+function ContactUs() {
   return (
-    <div ClassName="col 6" id="contactForm">
-      <div ClassName="container">
-        <div ClassName="row">
-          <div ClassName="col">
-            <div ClassName="form-group">
-              <Label for="firstName">First Name</Label>
-              <Input
-                ClassName="form-control"
-                id="firstName"
-                aria-describedby="firstName"
-              />
-              <Small id="firstName" ClassName="form-text text-muted">
-                First Name
-              </Small>
+    <>
+      <RenderContactForm />
+    </>
+  );
+}
+
+function RenderContactForm() {
+  return (
+    <>
+      <Container className="mt-5">
+        <Row>
+          <Col>
+            <h2>Message Us</h2>
+          </Col>
+        </Row>
+        <hr className="my-4" />
+        <Row>
+          <Col className="mycontent-left" xs={6}>
+            <div>
+              <address>
+                12345 Nucamp Street
+                <br />
+                Atlanta, GA 12345
+              </address>
             </div>
-          </div>
-          <div ClassName="col">
-            <div ClassName="form-group">
-              <Label for="lastName">Last Name</Label>
-              <Input
-                ClassName="form-control"
-                id="lastName"
-                aria-describedby="lastName"
-              />
-              <Small id="lastName" ClassName="form-text text-muted">
-                Last Name
-              </Small>
+            <div>
+              <address>(901) 463-0899</address>
             </div>
-          </div>
-        </div>
-        <div ClassName="row">
-          <div ClassName="col">
-            <div ClassName="form-group">
-              <Label for="emailAddress">Email address</Label>
-              <Input
-                type="email"
-                ClassName="form-control"
-                id="emailAddress"
-                aria-describedby="emailHelp"
-              />
-              <Small id="emailHelp" ClassName="form-text text-muted">
-                We'll never share your email with anyone else.
-              </Small>
+            <div>
+              <address>admin@gcms.com</address>
             </div>
-          </div>
-        </div>
-        <div ClassName="row">
-          <div ClassName="col">
-            <div ClassName="form-group">
-              <Label for="contactReason">Contact Reason</Label>
-              <select ClassName="form-control" id="contactReason">
-                <option>Join our Team</option>
-                <option>Request a Feature</option>
-                <option>Request Information</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div ClassName="row">
-          <div ClassName="col">
-            <div ClassName="form-group">
-              <Label for="contactMessage">Your message</Label>
-              <textarea
-                ClassName="form-control"
-                id="contactMessage"
-                rows="5"
-              ></textarea>
-            </div>
-          </div>
-        </div>
-        <div ClassName="row">
-          <div ClassName="col">
-            <div ClassName="form-group form-check">
-              <Input
-                type="checkbox"
-                ClassName="form-check-Input"
-                id="sendEmail"
-              />
-              <Label ClassName="form-check-Label" for="sendEmail">
-                Send a copy to my Email
-              </Label>
-            </div>
-          </div>
-        </div>
-        <div ClassName="row">
-          <div ClassName="col">
-            <button type="submit" ClassName="btn btn-primary">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Col>
+          <Col xs={6}>
+            <Form className="ml-3">
+              <FormGroup>
+                <Row>
+                  <Col xs={6}>
+                    <Label for="firstName">First Name</Label>
+                    <Input
+                      id="firstName"
+                      type="text"
+                      placeholder="First Name"
+                      className="mb-2"
+                    ></Input>
+                  </Col>
+                  <Col xs={6}>
+                    <Label for="lastName">Last Name</Label>
+                    <Input
+                      id="lastName"
+                      type="text"
+                      placeholder="Last Name"
+                    ></Input>
+                  </Col>
+                </Row>
+                <Row className="mt-2">
+                  <Col>
+                    <Label for="email">Email Address</Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="Email Address"
+                    ></Input>
+                    <FormText>
+                      We'll never share your email with anyone else.
+                    </FormText>
+                  </Col>
+                </Row>
+              </FormGroup>
+              <FormGroup>
+                <Row>
+                  <Col className="mt-3">
+                    <Label for="contactReason">Contact Reason</Label>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Input id="contactReason" type="select">
+                      <option>Join our Team</option>
+                      <option>Request a Feature</option>
+                      <option>Request Information</option>
+                    </Input>
+                  </Col>
+                </Row>
+              </FormGroup>
+              <FormGroup className="mt-3">
+                <Row>
+                  <Col>
+                    <Label for="contactMessage">Your Message:</Label>
+                    <Input id="contactMessage" type="textarea"></Input>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="mt-4">
+                    <Button as="input" type="submit" value="Submit" />
+                  </Col>
+                </Row>
+              </FormGroup>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 
