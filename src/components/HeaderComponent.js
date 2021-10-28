@@ -17,8 +17,6 @@ function Header(props) {
           </Nav>
         </div>
       </header>
-      <div className="mb-5 mt-5"></div>
-      <div className="mb-5 mt-5"></div>
     </div>
   );
 }
