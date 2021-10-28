@@ -1,50 +1,46 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "@fortawesome/fontawesome-svg-core";
-import "bootstrap-social";
 
 function Footer(props) {
   return (
     <>
-      <footer class="mastfoot mt-auto">
-        <div class="container">
-          <div class="row row-content justify-content-center">
-            <div class="col-6 col-sm-5 text-center">
-              <p>Social - Coming Soon</p>
-              <a
-                class="btn btn-social-icon btn-instagram"
-                href="http://instagram.com/"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                class="btn btn-social-icon btn-facebook"
-                href="http://facebook.com/"
-              >
-                <i className="fa-brands fa-facebook" />
-              </a>
-              <a
-                class="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a
-                class="btn btn-social-icon btn-youtube"
-                href="http://youtube.com/"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a
-                class="btn btn-social-icon btn-discord"
-                href="http://discord.com/"
-              >
-                <i class="fab fa-discord"></i>
-              </a>
-            </div>
+      <div className="container mastfoot mt-auto">
+        <div className="row row-content justify-content-center">
+          <div className="col-6 col-sm-5 text-center">
+            <p>Social - Coming Soon</p>
+            <a
+              className="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/"
+            >
+              <i className="fa fa-instagram" />
+            </a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://facebook.com/"
+            >
+              <i className="fa fa-facebook" />
+            </a>
+            <a
+              className="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/"
+            >
+              <i className="fa fa-twitter" />
+            </a>
+            <a
+              className="btn btn-social-icon btn-google"
+              href="http://youtube.com/"
+            >
+              <i className="fa fa-youtube" />
+            </a>
+            <a
+              class="btn btn-social-icon btn-discord"
+              href="http://discord.com/"
+            >
+              <FontAwesomeIcon icon="fa-brands fa-discord" color="#FFF" />
+            </a>
           </div>
         </div>
-      </footer>
+      </div>
     </>
   );
 }
