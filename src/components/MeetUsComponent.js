@@ -11,7 +11,7 @@ const MeetUs = () => {
 
   $(function () {
     $("#msingleton").on("click", function () {
-      $("#myPhoto").attr("src", "/assets/img/logo.png");
+      $("#myPhoto").attr("src", "/assets/img/mattimage.png");
     });
     $("#smccutcheon").on("click", function () {
       $("#myPhoto").attr("src", "/assets/img/sarahimage.png");
@@ -120,7 +120,7 @@ const MeetUs = () => {
           <div class="intro-bg-normal" id="photoFrame">
             <img
               id="myPhoto"
-              src="/assets/img/logo.png"
+              src="/assets/img/mattimage.png"
               style={{ maxWidth: "80%", maxHeight: "80%" }}
             />
             <pre></pre>
