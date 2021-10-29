@@ -22,6 +22,7 @@ class Main extends Component {
           {/* <Route path="/features" render={() => <Feature item={FEATURES} />} /> */}
           <Route path="/aboutus" component={AboutUs} />
           <Route path="/meetus" component={MeetUS} />
+
           <Redirect to="/home" />
         </Switch>
         <Footer />
