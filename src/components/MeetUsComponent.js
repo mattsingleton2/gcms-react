@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Collapse, CardBody, Card, CardHeader } from "reactstrap";
 import { MEET } from "../shared/meetus";
+import $ from "jquery";
 import "../App.css";
 import { Container } from "semantic-ui-react";
 import { Row, Col } from "react-bootstrap";
@@ -8,6 +9,17 @@ import { Row, Col } from "react-bootstrap";
 const MeetUs = () => {
   const [toggle, setToggle] = useState(1);
 
+  $(function () {
+    $("#msingleton").on("click", function () {
+      $("#myPhoto").attr("src", "/assets/img/logo.png");
+    });
+    $("#smccutcheon").on("click", function () {
+      $("#myPhoto").attr("src", "/assets/img/sarahimage.png");
+    });
+    $("#ajalloh").on("click", function () {
+      $("#myPhoto").attr("src", "/assets/img/Abdulai_image.jpeg");
+    });
+  });
   return (
     <Container className="carousel-container">
       <div>
@@ -22,7 +34,11 @@ const MeetUs = () => {
           <Card className="intro-bg">
             <h1 style={{ color: "#333333" }}>The Team</h1>
             <CardHeader onClick={() => setToggle(1)}>
-              <span className="font-weight-bold" style={{ color: "#333333" }}>
+              <span
+                id="msingleton"
+                className="font-weight-bold"
+                style={{ color: "#333333" }}
+              >
                 Matt Singleton
               </span>
             </CardHeader>
@@ -43,7 +59,11 @@ const MeetUs = () => {
 
           <Card className="intro-bg">
             <CardHeader onClick={() => setToggle(2)}>
-              <span className="font-weight-bold" style={{ color: "#333333" }}>
+              <span
+                id="smccutcheon"
+                className="font-weight-bold"
+                style={{ color: "#333333" }}
+              >
                 Sarah McCutcheon
               </span>
             </CardHeader>
@@ -71,7 +91,11 @@ const MeetUs = () => {
 
           <Card className="intro-bg">
             <CardHeader onClick={() => setToggle(3)}>
-              <span className="font-weight-bold" style={{ color: "#333333" }}>
+              <span
+                id="ajalloh"
+                className="font-weight-bold"
+                style={{ color: "#333333" }}
+              >
                 Abdulai Jalloh
               </span>
             </CardHeader>
@@ -106,7 +130,6 @@ const MeetUs = () => {
       </Row>
     </Container>
   );
-  //   }
 };
 
 export default MeetUs;
