@@ -11,8 +11,8 @@ function Header(props) {
           <Nav className="nav nav-masthead justify-content-center">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/features">Features</Nav.Link>
-            <Nav.Link href="/meet">Meet the Team</Nav.Link>
-            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/meetus">Meet the Team</Nav.Link>
+            <Nav.Link href="/aboutus">About Us</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </div>
