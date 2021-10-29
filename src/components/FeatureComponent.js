@@ -69,7 +69,7 @@ const Feature = (props) => {
               <Image
                 draggable={false}
                 style={{
-                  width: "110%",
+                  width: "100%",
                   height: "310px",
                 }}
                 src={image.image}
