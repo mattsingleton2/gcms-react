@@ -17,7 +17,6 @@ export const FEATURES = [
     id: 2,
     name: "Features Name 2",
     image: "/assets/img/Logo.png",
-
     description: "Brief Feature Introduction goes here",
   },
   {

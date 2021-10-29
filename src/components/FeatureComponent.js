@@ -35,7 +35,7 @@ const Feature = (props) => {
         <div class="col-6">
           <h3 class="mb-3">Upcoming Features</h3>
         </div>
-        <div class="col-6 text-right">
+        <div class="col-5 text-right">
           <a
             class="btn btn-primary mb-3 mr-1"
             href="#featuresCarousel"
@@ -53,6 +53,7 @@ const Feature = (props) => {
             <i class="fa fa-arrow-right" />
           </a>
         </div>
+        <div class="col"></div>
       </div>
 
       <Carousel
