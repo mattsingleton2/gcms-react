@@ -1,4 +1,4 @@
-import React, { Small } from "react";
+import React from "react";
 import { Label, Input } from "reactstrap";
 import { Form, Button, FormGroup, FormText } from "react-bootstrap";
 import { Row, Col, Container } from "reactstrap";
